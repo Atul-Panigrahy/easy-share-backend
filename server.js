@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const routes = require("./routes/router.js");
 const path = require("path");
+const cors = require("cors");
 
 const connectDB = require("./config/db");
 connectDB();
@@ -9,6 +10,13 @@ connectDB();
 // Template Engine
 app.set("views", path.join(__dirname, "/views"));
 app.set("view engine", "ejs");
+
+let corsOptions = {
+  origin: ["http://127.0.0.1:5500"],
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
 
 //Router
 app.use("/", routes);
