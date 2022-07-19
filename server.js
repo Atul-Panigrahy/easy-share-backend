@@ -5,7 +5,7 @@ const routes = require("./routes/router.js");
 const connectDB = require("./config/db");
 connectDB();
 
-app.use("/api/files", routes);
+app.use("/", routes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
