@@ -5,6 +5,8 @@ const path = require("path");
 const cors = require("cors");
 
 app.use(express.static("public"));
+app.use(express.json());
+
 const connectDB = require("./config/db");
 connectDB();
 
