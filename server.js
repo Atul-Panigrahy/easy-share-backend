@@ -4,6 +4,7 @@ const routes = require("./routes/router.js");
 const path = require("path");
 const cors = require("cors");
 
+app.use(express.static("public"));
 const connectDB = require("./config/db");
 connectDB();
 
