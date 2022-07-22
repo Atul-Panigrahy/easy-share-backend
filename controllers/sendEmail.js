@@ -3,7 +3,7 @@ const { sendMail } = require("../services/emailService");
 const { emailTemplate } = require("../services/emailTemplate");
 
 module.exports.sendEmail = async (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
   const { uuid, emailFrom, emailTo } = req.body;
 
   // Validate request body

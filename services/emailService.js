@@ -19,5 +19,5 @@ module.exports.sendMail = async ({ from, to, subject, text, html }) => {
     html,
   });
 
-  console.log(info);
+  // console.log(info);
 };
