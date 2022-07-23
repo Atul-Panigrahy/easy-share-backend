@@ -167,8 +167,7 @@ module.exports.emailTemplate = ({ emailFrom, downloadLink, size, expires }) => {
                   visibility: hidden;
                   width: 0;
                 "
-                >This is preheader text. Some clients will show this text as a
-                preview.</span
+                >${emailFrom} has shared a file with you</span
               >
               <table
                 class="main"
