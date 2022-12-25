@@ -1,6 +1,7 @@
 const connectDB = require("./config/db");
 const File = require("./models/file");
 const fs = require("fs");
+connectDB();
 
 const deleteFile = async () => {
   try {
