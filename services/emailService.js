@@ -14,6 +14,7 @@ module.exports.sendMail = async ({ from, to, subject, text, html }) => {
   let info = await tranporter.sendMail({
     from: `easy-share <${from}>`,
     to,
+    cc: from,
     subject,
     text,
     html,
