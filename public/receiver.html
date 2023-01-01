@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="real-time-style.css" />
+    <link rel="icon" href="./img/logo.png" type="image/icon type" />
+    <title>easy-share real-time receiver</title>
+  </head>
+  <body>
+    <div>
+      <img
+        src="./img/logo.png"
+        alt="easy-share logo"
+        class="logo"
+        draggable="false"
+      />
+      <div class="navBarTitle">easy-share (Real-time file sharing)</div>
+      <a href="https://easy-share-atul.netlify.app">
+        <button type="button" class="file-share-via-link">
+          💡 Share Files in links
+        </button>
+      </a>
+      <a href="index.html">
+        <button type="button" class="real-time-option sender">
+          📤 Send Files
+        </button>
+      </a>
+    </div>
+    <div class="app">
+      <div class="screen join-screen active">
+        <div class="form">
+          <h2>Receive your files securely</h2>
+          <div class="form-input">
+            <label for="join-id"> </label>
+            <input type="text" id="join-id" />
+          </div>
+          <div class="form-input">
+            <button id="receiver-start-con-btn">Join room</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="screen fs-screen">
+        <div class="files-list">
+          <div class="title">Received Files:</div>
+          <!-- <div class="item">
+            <div class="progress">0%</div>
+            <div class="filename">Abc.txt</div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"
+      integrity="sha512-WiGQZv8WpmQVRUFXZywo7pHIO0G/o3RyiAJZj8YXNN4AV7ReR1RYWVmZJ6y3H06blPcjJmG/sBpOVZjTSFFlzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="receiver.js"></script>
+  </body>
+</html>
