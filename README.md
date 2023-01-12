@@ -14,7 +14,7 @@ This repo contains code for both REST API and real-time file transfer using sock
 
 Access the complete real-time architecture [here](https://whimsical.com/real-time-socket-programming-Dszu9ERMtBxDgeHHSXZDep@7YNFXnKbYiznLRKwUGezT)
 
-<img src="public\img\easy-share realtime backend architecture.png" alt="easy-share real-time backend architecture">
+<a href="https://whimsical.com/real-time-socket-programming-Dszu9ERMtBxDgeHHSXZDep@7YNFXnKbYiznLRKwUGezT" target="_blank"><img src="public\img\easy-share realtime backend architecture.png" alt="easy-share real-time backend architecture"></a>
 
 <br>
 
