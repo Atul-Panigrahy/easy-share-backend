@@ -1,5 +1,23 @@
 # **easy-share-backend**
 
+Repo Description: Backend code for the [easy-share](https://easy-share-atul.netlify.app/) application.
+
+This repo contains code for both REST API and real-time file transfer using socket.
+
+## easy-share Application description:
+
+- easy-share supports file upload and generate link for the uploaded file
+- support sending the file link to the sender email, keeping the sender email as cc
+- support for real-time file transfer between a sender and receiver by joining a room
+
+## Real-time file transfer architecture
+
+Access the complete real-time architecture [here](https://whimsical.com/real-time-socket-programming-Dszu9ERMtBxDgeHHSXZDep@7YNFXnKbYiznLRKwUGezT)
+
+<img src="public\img\easy-share realtime backend architecture.png" alt="easy-share real-time backend architecture">
+
+<br>
+
 ### dependencies
 
 - cors
@@ -29,7 +47,6 @@
    2. show file: [showFile.js](#showFile)
    3. download file: [downloadFile.jdownloas](#downloadFile)
    4. send Email: [sendEmail.js](#sendEmail)
-
 
 ### Controller Details:
 
